@@ -3,7 +3,8 @@
 const books = document.querySelectorAll('.book');
 const adv = document.querySelector('.adv');
 const body = document.querySelector('body');
-const bookName = document.querySelector('a');
+const bookName = document.querySelectorAll('h2 a');
+const chapters = document.querySelectorAll('li')
 
 
 
@@ -17,7 +18,8 @@ adv.remove();
 
 body.style.backgroundImage = 'url(./image/new_bg.jpg)';
 
-bookName.textContent = 'Книга 3. this и Прототипы Объектов';
+bookName[4].textContent = 'Книга 3. this и Прототипы Объектов';
 
 console.log(books);
+console.log(chapters);
 
